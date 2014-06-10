@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e69a2c91-efd9-4e98-a551-7ccfc8dd799a" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test Files/index.html" afterPath="" />
-    </list>
+    <list default="true" id="e69a2c91-efd9-4e98-a551-7ccfc8dd799a" name="Default" comment="" />
     <ignored path="Snyder_Edward_WPF.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
