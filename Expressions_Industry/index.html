@@ -10,12 +10,16 @@
 
         var colorCopies = prompt ("How many color copies were made?");
         var regularCopies = prompt ("How many black and white copies were made?");
-        var totalNumber = regularCopies + colorCopies;
+
+        var result = Number(colorCopies) + Number(regularCopies);
 
 
-        prompt ("Total number of copies" + totalNumber);
+        prompt ("Total number of copies" + result);
 
-        var numberOfclientDivisions = prompt ("How many divisions should this be split between?");
+        var cost = result * .003 + 33.34%;
+
+        prompt ("Total cost to customer - " + cost);
+
 
 
 
