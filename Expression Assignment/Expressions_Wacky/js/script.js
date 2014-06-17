@@ -8,23 +8,33 @@ Expressions_Wacky
 
 
 
- var costOfkeg =prompt ("How much will your keg cost in dollars?");//cost of a "full" keg of beer
+   var costOfkeg =prompt ("How much will your keg cost in dollars?");//cost of a "full" keg of beer
 
-   var collected =  [22, 6, 13];
+   var collected =  [12, 6, 13];
 
    var total = collected [0] + collected [1] + collected [2];
+
    alert ("Money already on hand" + total);
 
- var splitBetween = prompt("How many people are you splitting this between?");//number of people contributing
+   var whatsLeft = costOfkeg - total;
 
- var costPerperson = costOfkeg - collected / splitBetween;//finding out how much each person will have to pay
+   alert ("Revised cost of keg" + whatsLeft);
 
- alert ("Your part of the cost" + costPerperson);//tells each person how much they'll have to pay
-
- var howManycups = 1984 / splitBetween  ;//1984 are the oz's in a full keg / the number of people (split between)
+   var splits = prompt("How many people are you splitting this between?");//number of people contributing
 
 
- alert ("You can have this many 12oz cups: " + howManycups / 12 );//number of cups / 12 (ozs per cup)
+   var remainingCost = costOfkeg - whatsLeft;
+
+
+   var costPerperson = remainingCost / splits;
+
+
+   alert ("Your part of the cost" + costPerperson );//tells each person how much they'll have to pay
+
+   var howManycups = 1984 / splitBetween  ;//1984 are the oz's in a full keg / the number of people (split between)
+
+
+   alert ("You can have this many 12oz cups: " + howManycups / 12 );//number of cups / 12 (ozs per cup)
 
 
 
