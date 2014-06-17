@@ -6,9 +6,20 @@ Conditionals_worksheet
 
 //alert("testing"); Test was successful//
 
-var mpg = galUsed / milesTraveled;
-var galAvail = C
-var galUsed = C - galAvail;
-var capacity = C;
-var milesTraveled = X
+   var mpg = galUsed / milesTraveled;
 
+   var galAvail = tankCapacity - galUsed;
+
+   var tankCapacity = X;
+
+   var milesLeft =  / mpg;
+
+
+
+
+if(milesLeft > 200);{
+      alert("You can make the next gas station!");}else
+{
+    alert("You better stop for gas!");
+
+}
