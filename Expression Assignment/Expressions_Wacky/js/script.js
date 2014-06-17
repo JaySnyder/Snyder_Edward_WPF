@@ -10,20 +10,20 @@ Expressions_Wacky
 
    var costOfkeg =prompt ("How much will your keg cost in dollars?");//cost of a "full" keg of beer
 
-   var collected =  [12, 6, 13];
+   var collected =  [12, 6, 13];//Slush money left over from previous party
 
-   var total = collected [0] + collected [1] + collected [2];
+   var total = collected [0] + collected [1] + collected [2];//added array 0, 1 & 2
 
-   alert ("Money already on hand " + total);
+   alert ("Money already on hand " + total);//total dollars from slush
 
-   var whatsLeft = costOfkeg - total;
+   var whatsLeft = costOfkeg - total; //applying slush money against cost of a new keg
 
-   alert ("Revised cost of keg " + whatsLeft);
+   alert ("Revised cost of keg " + whatsLeft);//this is whats left on the keg
 
    var splits = prompt("How many people are you splitting this between?");//number of people contributing
 
 
-   var remainder = whatsLeft / splits;
+   var remainder = whatsLeft / splits;//number of people splitting what cost is left in the keg
 
    alert ("Your part of the cost " + remainder );//tells each person how much they'll have to pay
 
