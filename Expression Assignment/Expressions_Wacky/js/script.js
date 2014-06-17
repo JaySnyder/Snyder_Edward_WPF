@@ -14,22 +14,18 @@ Expressions_Wacky
 
    var total = collected [0] + collected [1] + collected [2];
 
-   alert ("Money already on hand" + total);
+   alert ("Money already on hand " + total);
 
    var whatsLeft = costOfkeg - total;
 
-   alert ("Revised cost of keg" + whatsLeft);
+   alert ("Revised cost of keg " + whatsLeft);
 
    var splits = prompt("How many people are you splitting this between?");//number of people contributing
 
 
    var remainder = whatsLeft / splits;
 
-
-
-
-
-   alert ("Your part of the cost" + remainder );//tells each person how much they'll have to pay
+   alert ("Your part of the cost " + remainder );//tells each person how much they'll have to pay
 
 
    var howManycups = 1984 / splits; //1984 are the oz's in a full keg / the number of people (split between)
