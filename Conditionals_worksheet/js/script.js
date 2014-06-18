@@ -10,32 +10,19 @@ Conditionals_worksheet
 
    var milesTraveled = prompt ("How many miles have you traveled thus far? ");
 
-   var 
+   var gasUsed = prompt ("What percentage of your gas have you used? ");
 
-   var mpg = galStarted / milesTraveled;
+   var mpg = gasUsed / milesTraveled;
 
-   var galStarted =
-
-
-
-
-
-   var gasLeft = prompt ("What percentage of your gas is left");
-
-   var mpg = galUsed / milesTraveled;
-
-   var gasAvail = tankCapacity - galUsed;
-
-   var tankCapacity = X;
-
-   var milesLeft =  / mpg;
+   alert("Your MPG's are - " + mpg);
 
 
 
 
-if(milesLeft > 200);{
-      alert("You can make the next gas station!");}else
-{
-    alert("You better stop for gas!");
 
-}
+//if(milesLeft > 200);{
+      //alert("You can make the next gas station!");}else
+//{
+  //alert("You better stop for gas!");
+
+//}
