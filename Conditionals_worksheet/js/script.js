@@ -1,27 +1,28 @@
 /*
-JaySnyder
+Jay Snyder
 Conditionals_worksheet
-6/17/14*/
+6/17/14
+*/
 
-//alert("testing"); Test was successful//
+//alert("testing"); Test was successful
 
-   var tankCap = prompt ("How many gallons does your tank hold? ");
+    var tankCap = prompt ("How many gallons does your tank hold? ");
 
-   var milesDriven = prompt ("How many miles have you driven? ");
+    var milesDriven = prompt ("How many miles have you driven? ");
 
-   var gasUsed = prompt ("Percentage of gas used? ");
+    var gasUsed = prompt ("Percentage of gas used? ");
 
-   var galUsed = gasUsed - tankCap;
+    var galUsed = gasUsed - tankCap;
 
-   var mpg = milesDriven / galUsed;
+    var mpg = milesDriven / galUsed;
 
-   alert("You're getting this many mpg: " + mpg);
+    alert("You're getting this many mpg: " + mpg);
 
-   var galLeft = tankCap - gasUsed;
+    var galLeft = tankCap - gasUsed;
 
-   alert("You have this many more gallons left:  " + galLeft);
+    alert("You have this many more gallons left:  " + galLeft);
 
-   //var milesLeft =  * galLeft;
+    var milesLeft =  galLeft / mpg;
 
    //alert ("Miles you can drive:  " + milesLeft);
 
