@@ -8,13 +8,27 @@ Conditionals_worksheet
 
    var tankCap = prompt ("How many gallons does your tank hold? ");
 
-   var milesTraveled = prompt ("How many miles have you traveled thus far? ");
+   var milesDriven = prompt ("How many miles have you driven? ");
 
-   var gasUsed = prompt ("What percentage of your gas have you used? ");
+   var gasUsed = prompt ("Percentage of gas used? ");
 
-   var mpg = gasUsed / milesTraveled;
+   var milesPergal = milesDriven / gasUsed;
 
-   alert("Your MPG's are - " + mpg);
+   alert("You're getting this many mpg: " + milesPergal);
+
+   var gasLeft = tankCap - gasUsed;
+
+   alert("You have this many more gallons left:  " + tankCap - gasUsed );
+
+   alert("You can go this many more miles:  " + mpg / gasLeft);
+
+
+
+   //var traveled = prompt ("How many miles have you traveled? ");
+
+   //var mpg = traveled / x;
+
+   //alert('Your Miles Per Gallon= ' + mpg);
 
 
 
