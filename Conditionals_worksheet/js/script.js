@@ -1,8 +1,7 @@
 /*
 JaySnyder
 Conditionals_worksheet
-6/17/2014
- */
+6/17/14*/
 
 //alert("testing"); Test was successful//
 
@@ -12,31 +11,23 @@ Conditionals_worksheet
 
    var gasUsed = prompt ("Percentage of gas used? ");
 
-   var milesPergal = milesDriven / gasUsed;
+   var galUsed = gasUsed - tankCap;
 
-   alert("You're getting this many mpg: " + milesPergal);
+   var mpg = milesDriven / galUsed;
 
-   var gasLeft = tankCap - gasUsed;
+   alert("You're getting this many mpg: " + mpg);
 
-   alert("You have this many more gallons left:  " + tankCap - gasUsed );
+   var galLeft = tankCap - gasUsed;
 
-   alert("You can go this many more miles:  " + mpg / gasLeft);
+   alert("You have this many more gallons left:  " + galLeft);
 
+   //var milesLeft =  * galLeft;
 
+   //alert ("Miles you can drive:  " + milesLeft);
 
-   //var traveled = prompt ("How many miles have you traveled? ");
-
-   //var mpg = traveled / x;
-
-   //alert('Your Miles Per Gallon= ' + mpg);
-
-
-
-
-
-//if(milesLeft > 200);{
-      //alert("You can make the next gas station!");}else
-//{
-  //alert("You better stop for gas!");
-
-//}
+   //if(milesLeft > 200){
+      //console.log("You can make the next gas station!");
+       //}else
+      // {
+      // console.log("You better stop for gas!");
+      // }
