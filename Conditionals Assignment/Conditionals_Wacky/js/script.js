@@ -38,6 +38,10 @@ if(isNaN(balloons)) {
 
    alert ("You need this many gallons of water- " + galNeeded);
 
+if(water > galNeeded){
+    ("You have enough water! Proceed with the water fight!")}else{("You need to find water before you play!")
+}
+
 
 
 
