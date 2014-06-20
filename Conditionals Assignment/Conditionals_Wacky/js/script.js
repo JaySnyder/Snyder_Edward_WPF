@@ -6,9 +6,15 @@ Conditionals_wacky
 
 //alert("testing"); Test ran successfully!
 
-   water = 279;
+   //water = 279;
 
    var teams = prompt ("How many teams are involved? ");
+if(teams===""){
+
+    teams = prompt ("How many teams are involved?. Please don't leave blank! ");
+
+}
+
 
    var balloons = prompt ("How many balloons per team? ");
    //reprompt for number of balloons
@@ -26,7 +32,7 @@ if(isNaN(balloons)) {
 }
 
 
-   var amount = number(teams) + number(balloons);
+   var amount = Number(teams) + Number(balloons);
 
    alert("You need to fill this many balloons- " + amount);
 
