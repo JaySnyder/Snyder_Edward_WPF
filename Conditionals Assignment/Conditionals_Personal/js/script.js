@@ -11,6 +11,9 @@ Conditionals_Personal
 
    var seed = prompt ("How much did seeds cost?  ");
 
+   seed = prompt ("How much did seeds cost?. Please don't leave blank! ")
+
+
    cost = Number(materials) + Number(seed);
 
    alert("Total cost of your garden" + cost);
