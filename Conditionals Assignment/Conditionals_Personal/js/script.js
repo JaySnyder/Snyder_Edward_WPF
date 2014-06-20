@@ -11,24 +11,23 @@ Conditionals_Personal
 
    var seed = prompt ("How much did seeds cost?  ");
 
-   seed = prompt ("How much did seeds cost?. Please don't leave blank! ")
+    if(seed===""){
 
+      seed = prompt ("How much did seeds cost?. Please don't leave blank! ");
+
+      }
 
    cost = Number(materials) + Number(seed);
 
    alert("Total cost of your garden" + cost);
 
 
-     //alert("Total cost of your garden:" + cost);
-
-      //alert("Total cost of garden: " + cost);
-
    var tomatoes = prompt ("How many pounds of tomatoes did you harvest?  lbs. ");
 
    var ppp = prompt ("What is selling price per pound? ");
 
       alert("You made this much: $" + tomatoes * ppp);
-if(tomatoes * ppp > cost){
+  if(tomatoes * ppp > cost){
        alert("You made your money back! Congratulations!");}else{
     alert("Keep growing, you need more tomatoes!")
 }
