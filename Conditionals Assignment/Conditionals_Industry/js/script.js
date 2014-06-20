@@ -15,27 +15,27 @@ Conditionals_Industry
 
    var c = prompt ("Cost per hour for conceptualizing: ");//conceptualizing cost per hr.
 
-      //Validate prompt
-      //if(condition to test){ code that will run if true}
-
-    if(c ===""){
+   if(c ===""){
     //Reprompt for a new answer
-    c = prompt ("Cost per hour for conceptualizing. Please don't leave blank! ");//validation prompt
-}
-
-    //Test if they typed in numbers
-    //isNaN() - is not a number
-    //console.log(isNaN("Monkey")); //true -Boolean
-    //console.log(isNaN(7)); //false -Boolean
+      c = prompt ("Cost per hour for conceptualizing. Please don't leave blank! ");//validation prompt
+      }
 
     if(isNaN(c)){
 
-    //Reprompt for only numbers
-    c = prompt ("Cost per hour for conceptualizing. Please use only numbers! ");//validation statement
+    //Reprompt for numbers only
+      c = prompt ("Cost per hour for conceptualizing. Please use only numbers! ");//validation statement
 
-}
+      }
 
     var co = prompt ("How many hours of conceptualizing? ");//total hrs. of conceptualizing
+
+
+  if(co ===""){
+    //Reprompt for a new answer
+    co = prompt ("Cost per hour for conceptualizing. Please don't leave blank! ");//validation prompt
+    }
+
+
 
    //Combine both validations
    if(co==="" || isNaN(co)){
