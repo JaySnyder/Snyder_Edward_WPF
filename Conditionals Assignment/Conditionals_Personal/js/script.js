@@ -1,7 +1,7 @@
 /*
 JaySnyder
 Conditionals_Personal
-6/10/2014
+6/19/2014
  */
 
 //alert("testing");
@@ -39,7 +39,20 @@ if(materials===""){
 
    var tomatoes = prompt ("How many pounds of tomatoes did you harvest?  lbs. ");
 
+//Reprompt for answer
+if(tomatoes==="") {
+
+    tomatoes = prompt("How many pounds of tomatoes did you harvest?. Please don't leave blank! ");
+
+}
    var ppp = prompt ("What is selling price per pound? ");
+
+//Reprompt for answer
+if(ppp==="") {
+
+    ppp = prompt("What is selling price per pound?. Please don't leave blank! ");
+
+}
 
       alert("You made this much: $" + tomatoes * ppp);
   if(tomatoes * ppp > cost){
