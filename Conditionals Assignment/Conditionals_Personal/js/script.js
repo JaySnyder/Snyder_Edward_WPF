@@ -9,6 +9,12 @@ Conditionals_Personal
 
    var materials = prompt ("How much did building materials cost?  ");
 
+if(materials===""){
+
+    materials = prompt ("How much did seeds cost?. Please don't leave blank! ");
+
+}
+
    var seed = prompt ("How much did seeds cost?  ");
 
     //Reprompt for answer
