@@ -70,14 +70,9 @@ if(isNaN(p)){
 
   }
 
-   var product = prompt ("How many hours of production: ");  //reprompt
-  if(product ===""){
+   var    product = prompt ("How many hours of production: ");
 
-      product = prompt ("How many hours of production: Please don't leave blank! ");//validation prompt
 
-      }
-
-   product = prompt ("How many hours of production: Please use only numbers");
 
 
    total2 = p * product;//total income for productions
