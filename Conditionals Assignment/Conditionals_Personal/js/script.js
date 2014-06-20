@@ -10,12 +10,20 @@ Conditionals_Personal
    var materials = prompt ("How much did building materials cost?  ");
 
    var seed = prompt ("How much did seeds cost?  ");
-
-    if(seed===""){
+    //Reprompt for answer
+  if(seed===""){
 
       seed = prompt ("How much did seeds cost?. Please don't leave blank! ");
 
       }
+
+if(isNaN(seed)) {
+
+    //Reprompt for  numbers
+    seed = prompt("How much did seeds cost?. Please use only numbers! ");
+
+        }
+
 
    cost = Number(materials) + Number(seed);
 
