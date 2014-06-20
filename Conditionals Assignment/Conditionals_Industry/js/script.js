@@ -41,7 +41,7 @@ Conditionals_Industry
    if(co==="" || isNaN(co)){
 
     co = prompt ("How many hours of conceptualizing?\nPlease don't leave blank and only use numbers.");
-}
+   }
 
 
    total1 = c * co;//total income for conceptualizing
@@ -51,7 +51,17 @@ Conditionals_Industry
 
    var p = prompt ("Cost per hour for production: ");
 
+if(p ===""){
+    //Reprompt for a new answer
+    p = prompt ("Cost per hour for production:. Please don't leave blank! ");//validation prompt
+   }
+
    var pr = prompt ("How many hours of production: ");
+
+if(c ===""){
+    //Reprompt for a new answer
+    c = prompt ("How many hours of production: Please don't leave blank! ");//validation prompt
+   }
 
    total2 = p * pr;//total income for productions
 
