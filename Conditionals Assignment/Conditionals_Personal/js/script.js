@@ -11,7 +11,7 @@ Conditionals_Personal
 
 if(materials===""){
 
-    materials = prompt ("How much did seeds cost?. Please don't leave blank! ");
+    materials = prompt ("How much did building materials cost?. Please don't leave blank! ");
 
 }
 
