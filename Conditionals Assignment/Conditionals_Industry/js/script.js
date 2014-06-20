@@ -7,6 +7,8 @@ Conditionals_Industry
 
    //alert("testing");conducted and working
 
+   //Working towards a new iMac using Conceptualizing and Production profits.
+
    var s = 632; //In $
 
    var iMac = 3750; //In $
@@ -32,16 +34,22 @@ Conditionals_Industry
 
   if(co ===""){
     //Reprompt for a new answer
-    co = prompt ("Cost per hour for conceptualizing. Please don't leave blank! ");//validation prompt
+    co = prompt ("How many hours of conceptualizing. Please don't leave blank! ");//validation prompt
     }
 
 
+if(isNaN(co)){
+
+    //Reprompt for numbers only
+    co = prompt ("How many hours of conceptualizing. Please use only numbers! ");//validation statement
+
+}
 
    //Combine both validations
    if(co==="" || isNaN(co)){
 
     co = prompt ("How many hours of conceptualizing?\nPlease don't leave blank and only use numbers.");
-   }
+    }
 
 
    total1 = c * co;//total income for conceptualizing
@@ -55,17 +63,26 @@ if(p ===""){
     //Reprompt for a new answer
     p = prompt ("Cost per hour for production:. Please don't leave blank! ");//validation prompt
    }
+if(isNaN(p)){
 
-   var pr = prompt ("How many hours of production: ");
+    //Reprompt for numbers only
+    p = prompt ("Cost per hour for production: Please use only numbers! ");//validation statement
 
-if(c ===""){
-    //Reprompt for a new answer
-    c = prompt ("How many hours of production: Please don't leave blank! ");//validation prompt
-   }
+  }
 
-   total2 = p * pr;//total income for productions
+   var product = prompt ("How many hours of production: ");  //reprompt
+  if(product ===""){
 
-   alert ("Amount made from production: " + (p * pr));
+      product = prompt ("How many hours of production: Please don't leave blank! ");//validation prompt
+
+      }
+
+   product = prompt ("How many hours of production: Please use only numbers");
+
+
+   total2 = p * product;//total income for productions
+
+   alert ("Amount made from production: " + (p * product));
 
    var j = total1 + total2;//total for conceptualizing and production
 
