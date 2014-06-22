@@ -28,7 +28,7 @@ Functions_Personal
       beef = prompt("How many people requested beef?. Please use only numbers! ");
      }
 
-     var chicken = prompt ("How many people requested chicken? ")
+     var chicken = prompt ("How many people requested chicken? ");
 
     if(chicken==="") {
 
@@ -42,3 +42,14 @@ Functions_Personal
 
     alert("Total number of attendees: " + amount);
 
+    var lbsOffish = fish * .8;
+
+    var lbsOfbeef = beef * .6;
+
+    var lbsOfchicken = chicken * .8;
+
+    alert("You need to purchase this many pounds of fish: " + lbsOffish);
+
+    alert("You need to purchase this many pounds of beef: " + lbsOfbeef);
+
+    alert("You need to purchase this many pounds of chicken: " + lbsOfchicken);
