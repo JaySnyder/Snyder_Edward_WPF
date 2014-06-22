@@ -17,15 +17,15 @@ Functions_Personal
          fish = prompt("How many people requested fish?. Please use only numbers! ");
      }
 
-     var beef = prompt("How many people requested beef? ");
+     var filet = prompt("How many people requested beef? ");
 
-    if(beef==="") {
+    if(filet==="") {
 
-    beef = prompt("How many people requested beef?.  Please do not leave blank! ");
+    filet = prompt("How many people requested beef?.  Please do not leave blank! ");
      }
 
-    if(isNaN(beef)){
-      beef = prompt("How many people requested beef?. Please use only numbers! ");
+    if(isNaN(filet)){
+      filet = prompt("How many people requested beef?. Please use only numbers! ");
      }
 
      var chicken = prompt ("How many people requested chicken? ");
@@ -38,18 +38,22 @@ Functions_Personal
        chicken = prompt("How many people requested chicken?. Please use only numbers! ");
      }
 
-    var amount = Number(fish) + Number(beef) + Number(chicken);
+    var amount = Number(fish) + Number(filet) + Number(chicken);
 
     alert("Total number of attendees: " + amount);
 
     var lbsOffish = fish * .8;
 
-    var lbsOfbeef = beef * .6;
+    var lbsOffilet = filet * .6;
 
     var lbsOfchicken = chicken * .8;
 
     alert("You need to purchase this many pounds of fish: " + lbsOffish);
 
-    alert("You need to purchase this many pounds of beef: " + lbsOfbeef);
+    alert("You need to purchase this many pounds of filet: " + lbsOffilet);
 
     alert("You need to purchase this many pounds of chicken: " + lbsOfchicken);
+
+    
+
+
