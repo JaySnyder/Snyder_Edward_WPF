@@ -6,38 +6,40 @@ Functions_Personal
 
 //alert("testing"); Test was successful
 
-   var fish = prompt("How many people requested fish? ");//number of ppl wanting fish
+      var fish = prompt("How many people requested fish? ");
 
-   if(fish==="") {    //reprompt to not leave blank
+   if(fish==="") {
 
        fish = prompt("How many people requested fish?.  Please do not leave blank! ");
      }
 
-    if(isNaN(fish)){     //reprompt to use a number
+    if(isNaN(fish)){
+        fish = prompt ("How many people requested fish?. Please use only numbers!");
+    }
 
-     var filet = prompt("How many people requested beef? ");   //number of ppl wanting beef
+     var filet = prompt("How many people requested beef? ");
+
+    if(filet==="") {
+
+      filet = prompt("How many people requested beef?.  Please do not leave blank! ");
      }
-    if(filet==="") {    //reprompt to not leave blank
 
-    filet = prompt("How many people requested beef?.  Please do not leave blank! ");
-     }
-
-    if(isNaN(filet)){       //reprompt to use a number
+    if(isNaN(filet)){
       filet = prompt("How many people requested beef?. Please use only numbers! ");
      }
 
-     var chicken = prompt ("How many people requested chicken? ");  //number of ppl wanting chicken
+      var chicken = prompt ("How many people requested chicken? ");
 
-    if(chicken==="") {        //reprompt to not leave blank
+    if(chicken==="") {
 
        chicken = prompt("How many people requested chicken?.  Please do not leave blank! ");
      }
 
-if(isNaN(chicken)){          //reprompt to use only numbers
+    if(isNaN(chicken)){
        chicken = prompt("How many people requested chicken?. Please use only numbers! ");
      }
 
-    var amount = Number(fish) + Number(filet) + Number(chicken);//total amount of attendees based on protein requests
+      var amount = Number(fish) + Number(filet) + Number(chicken);//total amount of attendees based on protein requests
 
     alert("Total number of attendees: " + amount);
 
@@ -67,6 +69,12 @@ if(isNaN(chicken)){          //reprompt to use only numbers
       alert("I saved enough! Let the party begin?")}else{alert("Sorry - Looks like hotdogs and chips!")
 
   }
+
+   var temp = prompt ("What is the temperature outside? ");
+
+   var logistics = (temp > 90 || amount < 35)? ("Party will be inside!") : ("Party will be outside!");
+
+   alert (logistics);
 
 
 
