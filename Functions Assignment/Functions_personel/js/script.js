@@ -11,29 +11,34 @@ Functions_Personal
    if(fish==="") {
 
        fish = prompt("How many people requested fish?.  Please do not leave blank! ");
-   }
+     }
 
-     if(isNaN(fish)){
+    if(isNaN(fish)){
          fish = prompt("How many people requested fish?. Please use only numbers! ");
      }
 
-   var beef = prompt("How many people requested beef? ");
+     var beef = prompt("How many people requested beef? ");
 
-   if(beef==="") {
+    if(beef==="") {
 
     beef = prompt("How many people requested beef?.  Please do not leave blank! ");
-    }
+     }
 
     if(isNaN(beef)){
       beef = prompt("How many people requested beef?. Please use only numbers! ");
-       }
+     }
 
-    var chicken = prompt ("How many people requested chicken? ")
+     var chicken = prompt ("How many people requested chicken? ")
 
-      if(chicken==="") {
+    if(chicken==="") {
 
        chicken = prompt("How many people requested chicken?.  Please do not leave blank! ");
-         }
-     if(isNaN(chicken)){
+     }
+    if(isNaN(chicken)){
        chicken = prompt("How many people requested chicken?. Please use only numbers! ");
-          }
+     }
+
+    var amount = Number(fish) + Number(beef) + Number(chicken);
+
+    alert("Total number of attendees: " + amount);
+
