@@ -6,54 +6,71 @@ Functions_Personal
 
 //alert("testing"); Test was successful
 
-   var fish = prompt("How many people requested fish? ");
+   var fish = prompt("How many people requested fish? ");//number of ppl wanting fish
 
-   if(fish==="") {
+   if(fish==="") {    //reprompt to not leave blank
 
        fish = prompt("How many people requested fish?.  Please do not leave blank! ");
      }
 
-    if(isNaN(fish)){
-         fish = prompt("How many people requested fish?. Please use only numbers! ");
+    if(isNaN(fish)){     //reprompt to use a number
+
+     var filet = prompt("How many people requested beef? ");   //number of ppl wanting beef
      }
-
-     var filet = prompt("How many people requested beef? ");
-
-    if(filet==="") {
+    if(filet==="") {    //reprompt to not leave blank
 
     filet = prompt("How many people requested beef?.  Please do not leave blank! ");
      }
 
-    if(isNaN(filet)){
+    if(isNaN(filet)){       //reprompt to use a number
       filet = prompt("How many people requested beef?. Please use only numbers! ");
      }
 
-     var chicken = prompt ("How many people requested chicken? ");
+     var chicken = prompt ("How many people requested chicken? ");  //number of ppl wanting chicken
 
-    if(chicken==="") {
+    if(chicken==="") {        //reprompt to not leave blank
 
        chicken = prompt("How many people requested chicken?.  Please do not leave blank! ");
      }
-    if(isNaN(chicken)){
+
+if(isNaN(chicken)){          //reprompt to use only numbers
        chicken = prompt("How many people requested chicken?. Please use only numbers! ");
      }
 
-    var amount = Number(fish) + Number(filet) + Number(chicken);
+    var amount = Number(fish) + Number(filet) + Number(chicken);//total amount of attendees based on protein requests
 
     alert("Total number of attendees: " + amount);
 
-    var lbsOffish = fish * .8;
+    var lbsOffish = fish * .8;//8ozs per serving
 
-    var lbsOffilet = filet * .6;
+    var lbsOffilet = filet * .6;//6ozs per serving
 
-    var lbsOfchicken = chicken * .8;
+    var lbsOfchicken = chicken * .8;//8ozs per serving
 
-    alert("You need to purchase this many pounds of fish: " + lbsOffish);
+    alert("You need to purchase this many pounds of fish: " + lbsOffish);//ppl wanting fish * .8
 
-    alert("You need to purchase this many pounds of filet: " + lbsOffilet);
+    alert("You need to purchase this many pounds of filet: " + lbsOffilet);//ppl wanting filet * .6
 
-    alert("You need to purchase this many pounds of chicken: " + lbsOfchicken);
+    alert("You need to purchase this many pounds of chicken: " + lbsOfchicken);//ppl wanting chicken * .8
 
-    
+    costOffish = lbsOffish * 9.99;//lbs of fish needed * market price
+
+    costOffilet = lbsOffilet * 11.99;//lbs of filet * market price
+
+    costOfchicken = lbsOfchicken * 5.99;//lbs of chicken * market price
+
+    foodCost = costOffish + costOffilet + costOfchicken;//total food cost (protein)
+
+    alert("Your cost for food is: " + foodCost);//whats this shindig's protein going to cost you
+
+  if(foodCost < 600){
+      alert("I saved enough! Let the party begin?")}else{alert("Sorry - Looks like hotdogs and chips!")
+
+  }
+
+
+
+
+
 
 
