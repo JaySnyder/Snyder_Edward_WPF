@@ -68,13 +68,13 @@ Functions_Personal
   if(foodCost < 600){
       alert("I saved enough! Let the party begin?")}else{alert("Sorry - Looks like hotdogs and chips!")
 
-  }
+  }   //else/if statement
 
-   var temp = prompt ("What is the temperature outside? ");
+   var temp = prompt ("What is the temperature outside? ");//requesting temperature
 
-   var logistics = (temp > 90 || amount < 35)? ("Party will be inside!") : ("Party will be outside!");
+   var logistics = (temp < 90 || amount < 35 )? ("Party will be outside!") : ("Party will be inside!");
 
-   alert (logistics);
+   alert (logistics);  //ternary statement & logical operator
 
 
 
