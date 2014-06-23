@@ -82,9 +82,11 @@ Functions_Personal
       temp = prompt("What is the temperature outside?. Please use only numbers! ");
      }
 
-    var logistics = (temp < 90 || amount < 35 )? ("Party will be outside!") : ("Party will be inside!");
+    var logistics = (temp > 90 || amount > 35 )? ("Party will be outside!") : ("Party will be inside!");
 
      alert (logistics);  //ternary statement & logical operator
+
+     alert ("Let's have fun!!!");
 
 
 
