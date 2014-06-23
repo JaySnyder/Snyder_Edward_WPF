@@ -49,11 +49,11 @@ Functions_Personal
 
     var lbsOfchicken = chicken * .8;//8ozs per serving
 
-    alert("You need to purchase this many pounds of fish: " + lbsOffish);//ppl wanting fish * .8
+    alert("You need " + lbsOffish + " pounds of fish.");//lbs of fish needed
 
-    alert("You need to purchase this many pounds of filet: " + lbsOffilet);//ppl wanting filet * .6
+    alert("You need " + lbsOffilet + " pounds of filet.");//ppl wanting filet * .6
 
-    alert("You need to purchase this many pounds of chicken: " + lbsOfchicken);//ppl wanting chicken * .8
+    alert("You need " + lbsOfchicken + " pounds of chicken.");//ppl wanting chicken * .8
 
     costOffish = lbsOffish * 9.99;//lbs of fish needed * market price
 
@@ -63,18 +63,28 @@ Functions_Personal
 
     foodCost = costOffish + costOffilet + costOfchicken;//total food cost (protein)
 
-    alert("Your cost for food is: " + foodCost);//whats this shindig's protein going to cost you
+    alert("Your cost for food is $" + foodCost );//whats this shindig's protein going to cost you
+
 
   if(foodCost < 600){
       alert("I saved enough! Let the party begin?")}else{alert("Sorry - Looks like hotdogs and chips!")
 
-  }   //else/if statement
+      }   //else/if statement
 
-   var temp = prompt ("What is the temperature outside? ");//requesting temperature
+    var temp = prompt ("What is the temperature outside? ");//requesting temperature
 
-   var logistics = (temp < 90 || amount < 35 )? ("Party will be outside!") : ("Party will be inside!");
+   if(temp==="") {
 
-   alert (logistics);  //ternary statement & logical operator
+    temp = prompt("What is the temperature outside?.  Please do not leave blank! ");
+     }
+
+   if(isNaN(temp)){
+      temp = prompt("What is the temperature outside?. Please use only numbers! ");
+     }
+
+    var logistics = (temp < 90 || amount < 35 )? ("Party will be outside!") : ("Party will be inside!");
+
+     alert (logistics);  //ternary statement & logical operator
 
 
 

@@ -1,7 +1,8 @@
 /*
-JaySnyder_WPF
-Test
-6/10/2014
+JaySnyder
+Functions_industry
+6/20/2014
  */
 
-alert("testing");
+//alert("testing");//Test successful
+
