@@ -6,7 +6,7 @@ Functions_industry
 
 //alert("testing");//Test successful
 
-   var perPersonsqFt = 150;
+
 
    var currentSpace = prompt("What is your current square footage?: ");
 
@@ -49,13 +49,12 @@ Functions_industry
   var totalEmployees = prompt ("You will have "+ Number(totalEmployees) + " employees after your hirings." );
 
 
+ // var perPersonsqFt = 150;
 
-   alert("Each employee requires 150 square feet, so you will need " +)
 
-  var totalSpace = function (employees, perPersonsqFt){
-           var totalSpace = Number(employees) * Number(perPersonsqFt);
+ /* var totalSpace = function (employees, 150){
+           var totalSpace = Number(employees) * 150;
+
            alert (totalSpace);
 
   }
-
-  spaceSize
