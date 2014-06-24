@@ -43,26 +43,16 @@ Functions_industry
     newHires = prompt("How many people are you looking to hire?. Please use only numbers! ");
 
    }
+          //(employees + newHires) * (perPersonsqFt)
 
+  var totalEmployees = Number(employees) + Number(newHires);
 
- 
+  var totalEmployees = prompt ("You will have "+ Number(totalEmployees) + " employees after your hirings." );
 
+  var totalSpace = function (employees, perPersonsqFt){
+           var totalSpace = Number(employees) * Number(perPersonsqFt);
+           alert (totalSpace);
 
+  }
 
-
-
-
-  //var spaceNeeded = function (newHires, employees, perPersonsqFt){
-//
-  //                 var spaceNeeded = newHires + employees * perPersonsqFt;
-//
-  //}
-   //var a = spaceNeeded(newHires,employees, perPersonsqFt);
-     //alert("You need this many square feet: " = a);
-
-
-
-//var spaceNeeded = Number(newHires) + Number(employees) * Number(perPersonsqFt);
-
-//alert("Space needed is; " + spaceNeeded);
-
+  alert(totalSpace);
