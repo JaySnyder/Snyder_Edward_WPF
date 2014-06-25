@@ -46,15 +46,15 @@ Functions_industry
 
   var totalEmployees = Number(employees) + Number(newHires);
 
-  var totalEmployees = prompt ("You will have "+ Number(totalEmployees) + " employees after your hirings." );
+  var totalEmployees = prompt ("You will have "+ Number(totalEmployees) + " employees after you hire." );
 
 
- // var perPersonsqFt = 150;
+  var perPersonsqFt = 150;
 
 
- /* var totalSpace = function (employees, 150){
+  var totalSpace = function (employees, 150){
            var totalSpace = Number(employees) * 150;
 
            alert (totalSpace);
 
-  }
+    }
