@@ -10,51 +10,58 @@ Functions_industry
 
    var currentSpace = prompt("What is your current square footage?: ");
 
-  if(currentSpace==="") {
+   while(isNaN(currentSpace) || (currentSpace==="")) {
 
-    currentSpace = prompt("What is your current square footage?. Please do not leave blank.");
-   }
-
-  if(isNaN(currentSpace)){
-    currentSpace = prompt("What is your current square footage?. Please use only numbers! ");
-   }
+          currentSpace = prompt("Please type in current square footage");
+    }
 
    var employees = prompt("How many employees do you currently have? ");
 
-  if(employees==="") {
+   while(isNaN(employees) || (employees==="")) {
 
-    employees = prompt("How many employees do you currently have?. Please do not leave blank.");
+           employees = prompt("How many employees do you currently have? ");
    }
-
-  if(isNaN(employees)) {
-      employees = prompt("How many employees do you currently have?. Please use only numbers! ");
-   }
-
 
    var newHires = prompt ("How many people are you looking to hire? ");
 
-  if(newHires==="") {
+   while(isNaN(newHires) || (newHires==="")) {
 
-    newHires = prompt("How many people are you looking to hire?. Please do not leave blank.");
+           newHires = prompt("How many people are you looking to hire?");
    }
 
-  if(isNaN(newHires)) {
 
-    newHires = prompt("How many people are you looking to hire?. Please use only numbers! ");
+  var sqFt = 175;
 
-   }
+     //anonymous function
 
-  var totalEmployees = Number(employees) + Number(newHires);
+  var totalSpace = function(employ,nH, sF) {
 
-  var totalEmployees = prompt ("You will have "+ Number(totalEmployees) + " employees after you hire." );
+      //Calcuations goes here
+  var totalEmployees = Number(employ) + Number(nH);
+
+  var totalSpace = totalEmployees * sF;
 
 
-  var perPersonsqFt = 150;
+      //**console.log("inside of loop");
+
+      //Return the calc value
+      //**return totalSpace;
+
+      }
+
+     //Function call!!!!
+     //Create a variable to catch the return value
+  var results = totalSpace(employees, newHires, sqFt);
+     console.log("The results are "+results);
+
+  var answer = (currentSpace < results)? "You will not fit, find a new space! ":"You will fit in your current space.";
+
+     //console.log(answer);
+    alert(answer);
 
 
-  var totalSpace = function (employees, 150){
-           var totalSpace = Number(employees) * 150;
 
-           alert (totalSpace);
 
-    }
+
+
+
