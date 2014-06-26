@@ -24,10 +24,10 @@ Functions_industry
 
    var newHires = prompt ("How many people are you looking to hire? ");
 
-   while(isNaN(newHires) || (newHires==="")) {
+    while(isNaN(newHires) || (newHires==="")) {
 
-           newHires = prompt("How many people are you looking to hire?");
-   }
+    newHires = prompt("How many people are you looking to hire?");
+     }
 
    var sqFt = 175;
 
