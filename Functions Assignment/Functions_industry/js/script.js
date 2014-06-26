@@ -13,7 +13,7 @@ Functions_industry
    while(isNaN(currentSpace) || (currentSpace==="")) {
 
           currentSpace = prompt("Please type in current square footage");
-    }
+   }
 
    var employees = prompt("How many employees do you currently have? ");
 
@@ -29,35 +29,43 @@ Functions_industry
            newHires = prompt("How many people are you looking to hire?");
    }
 
-
-  var sqFt = 175;
+   var sqFt = 175;
 
      //anonymous function
 
-  var totalSpace = function(employ,nH, sF) {
+   var totalSpace = function(empl, nH, sqFt) {
 
-      //Calcuations goes here
-  var totalEmployees = Number(employ) + Number(nH);
+      //Calculations go here
+   var totalEmployees = Number(empl) + Number(nH);
 
-  var totalSpace = totalEmployees * sF;
+   totalSpace = Number(totalEmployees) * sqFt;
 
-
-      //**console.log("inside of loop");
-
-      //Return the calc value
-      //**return totalSpace;
-
+                                     //**console.log("inside of loop");
+                                     //Return the calc value
+                                     //**return totalSpace;
       }
 
      //Function call!!!!
      //Create a variable to catch the return value
-  var results = totalSpace(employees, newHires, sqFt);
-     console.log("The results are "+results);
+   var results = totalSpace(employees, newHires, sqFt);
+     //console.log("The results are "+ results)
 
-  var answer = (currentSpace < results)? "You will not fit, find a new space! ":"You will fit in your current space.";
+
+   var answer = (currentSpace > totalSpace) ? ("You have enough room!") : ("Sorry, you need a bigger space.");
+
+
+
+
+
+
+
+
+
+
+   //var answer = (currentSpace < results) ? ("You will fit in your current space!") : ("You will not fit, start looking!");
 
      //console.log(answer);
-    alert(answer);
+    alert(answer );
 
 
 
