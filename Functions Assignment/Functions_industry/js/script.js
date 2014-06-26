@@ -53,19 +53,10 @@ Functions_industry
 
    var answer = (currentSpace > totalSpace) ? ("You have enough room!") : ("Sorry, you need a bigger space.");
 
-
-//FINAL WORK
-
-
-
-
-
-
-
-   //var answer = (currentSpace < results) ? ("You will fit in your current space!") : ("You will not fit, start looking!");
-
-     //console.log(answer);
     alert(answer );
+
+
+    //FINAL WORK
 
 
 
