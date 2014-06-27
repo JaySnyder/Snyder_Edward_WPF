@@ -61,18 +61,20 @@ Test
 
         //var totalPies = apple + cherry + blueberry + peach;
 
-       function piesOnhand(){
+       function pies(){
 
                   var apple = 50;
                   var cherry = 32;
                   var blueberry = 12;
                   var peach = 12;
 
-                var piesOnhand = apple + cherry + blueberry + peach;
+                var pies = Number(apple) + Number(cherry) + Number(blueberry) + Number(peach);
 
-                console.log(piesOnhand);
+               alert("You have " + pies + " on hand.");
 
           }
+
+        alert("You have " + pies + " on hand.");
 
 
 
