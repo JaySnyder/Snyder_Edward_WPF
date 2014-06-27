@@ -6,38 +6,28 @@ Functions_Personal
 
 //alert("testing"); Test was successful
 
-      var fish = prompt("How many people requested fish? ");
+      var fish = prompt("How many people requested fish? ");//Fish eaters
 
-   if(fish==="") {
+        while(isNaN(fish) || (fish==="")) {
 
-       fish = prompt("How many people requested fish?.  Please do not leave blank! ");
-     }
+        fish = prompt("How many people requested fish? ");//number & fill-in prompts - loop
+       }
 
-    if(isNaN(fish)){
-        fish = prompt ("How many people requested fish?. Please use only numbers!");
-    }
+      var filet = prompt("How many people requested beef? ");//Beef eaters
 
-     var filet = prompt("How many people requested beef? ");
 
-    if(filet==="") {
+        while(isNaN(filet) || (filet==="")) {
 
-      filet = prompt("How many people requested beef?.  Please do not leave blank! ");
-     }
+        filet = prompt("How many people requested beef? ");//number & fill-in prompts - loop
+       }
 
-    if(isNaN(filet)){
-      filet = prompt("How many people requested beef?. Please use only numbers! ");
-     }
 
-      var chicken = prompt ("How many people requested chicken? ");
+      var chicken = prompt ("How many people requested chicken? ");//Chicken eaters
 
-    if(chicken==="") {
+        while(isNaN(chicken) || (chicken==="")) {
 
-       chicken = prompt("How many people requested chicken?.  Please do not leave blank! ");
-     }
-
-    if(isNaN(chicken)){
-       chicken = prompt("How many people requested chicken?. Please use only numbers! ");
-     }
+        chicken = prompt("How many people requested chicken? ");//number & fill-in prompts - loop
+       }
 
       var amount = Number(fish) + Number(filet) + Number(chicken);//total amount of attendees based on protein requests
 

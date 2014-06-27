@@ -8,32 +8,32 @@ Functions_industry
 
 
 
-   var currentSpace = prompt("What is your current square footage?: ");
+   var currentSpace = prompt("What is your current square footage?: ");//getting info for ternary statement
 
    while(isNaN(currentSpace) || (currentSpace==="")) {
 
-          currentSpace = prompt("Please type in current square footage");
+          currentSpace = prompt("Please type in current square footage");//reprompt - loop
    }
 
-   var employees = prompt("How many employees do you currently have? ");
+   var employees = prompt("How many employees do you currently have? ");//employees currently aboard
 
    while(isNaN(employees) || (employees==="")) {
 
-           employees = prompt("How many employees do you currently have? ");
+           employees = prompt("How many employees do you currently have? ");//reprompt - loop
    }
 
-   var newHires = prompt ("How many people are you looking to hire? ");
+   var newHires = prompt ("How many people are you looking to hire? ");//how many hirees
 
     while(isNaN(newHires) || (newHires==="")) {
 
-    newHires = prompt("How many people are you looking to hire?");
+    newHires = prompt("How many people are you looking to hire?");//reprompt - loop
      }
 
-   var sqFt = 175;
+   var sqFt = 175;//each employee needs approx. 175 square feet of space
 
      //anonymous function
 
-   var totalSpace = function(empl, nH, sqFt) {
+   var totalSpace = function(empl, nH, sqFt) {       //anonymous function set up
 
       //Calculations go here
    var totalEmployees = Number(empl) + Number(nH);

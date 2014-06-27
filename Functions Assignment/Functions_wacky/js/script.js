@@ -19,7 +19,7 @@ Test
 
       while(isNaN(cTotal) || (cTotal==="")) {
 
-            cTotal = prompt ("How many people chose cherry pie? ")//number & fill in prompts - loop
+            cTotal = prompt ("How many people chose cherry pie? ");//number & fill in prompts - loop
 
         }
 
@@ -27,7 +27,7 @@ Test
 
       while(isNaN(bTotal) || (bTotal==="")) {
 
-             bTotal = prompt ("How many people chose blueberry pie? ")//number & fill in - loop
+             bTotal = prompt ("How many people chose blueberry pie? ");//number & fill in - loop
 
         }
 
@@ -35,7 +35,7 @@ Test
 
        while(isNaN(pTotal) || (pTotal==="")) {
 
-             pTotal = prompt ("How many people chose peach pie?")//number & fill in - loop
+             pTotal = prompt ("How many people chose peach pie?");//number & fill in - loop
 
         }
 
@@ -54,45 +54,27 @@ Test
 
         //var totalPies = apple + cherry + blueberry + peach;
         //Normal function set up
-       function pies(){
+       function pies1(){
 
-                  var apple = 50;
-                  var cherry = 32;
-                  var blueberry = 12;
-                  var peach = 12;
+                  var apple = 50;//apple pies on hand
+                  var cherry = 32;//cherry pies on hand
+                  var blueberry = 12;//blueberry pies on hand
+                  var peach = 12;//peach pies on hand
 
            var piesOnhand = apple + cherry + blueberry + peach;
 
                   alert("You have " + piesOnhand + " pies on hand.");
 
-          }
-
-                        pies();
-
-          var result = (pies > piesNeeded) ? ("You need more pies.") : ("You have enough pies.");
-
-            alert(result);//Ternary statement
+                      }
+                      pies1();
 
 
+          var result = (Number(piesNeeded) > Number(pies1)) ? ("You need more pies.") : ("You have enough pies.");
+
+         alert(result);//Ternary statement
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-var answer = (totalPies < piesNeeded) ? ("You need more pies!") : ("You have enough pies");
-
-              alert(answer);
 
 
 
