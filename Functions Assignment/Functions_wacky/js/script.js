@@ -7,13 +7,13 @@ Test
 //alert("testing"); Test ran successfully
 
 
-   var apple = 100;
+   //var apple = 100;
 
-   var cherry = 100;
+   //var cherry = 100;
 
-   var blueberry = 100;
+   //var blueberry = 100;
 
-   var peach = 100;
+   //var peach = 100;
 
    var aTotal = prompt ("How many people chose apple pie? ");
 
@@ -38,7 +38,7 @@ Test
 
         }
 
-   var pTotal = prompt ("How many people chose peach pie? ");
+       var pTotal = prompt ("How many people chose peach pie? ");
 
        while(isNaN(pTotal) || (pTotal==="")) {
 
@@ -56,13 +56,49 @@ Test
 
         var piesNeeded = total * 3.5;
 
-        alert ("You need a total of " + piesNeeded + " pies.")
+        alert ("You need a total of " + piesNeeded + " pies.");
 
 
         //var totalPies = apple + cherry + blueberry + peach;
 
+       function piesOnhand(){
 
-   //var result = (totalPies < piesNeeded) ? ("You need more pies!") : ("You have enough pies");
+                  var apple = 50;
+                  var cherry = 32;
+                  var blueberry = 12;
+                  var peach = 12;
+
+                var piesOnhand = apple + cherry + blueberry + peach;
+
+                console.log(piesOnhand);
+
+          }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var answer = (totalPies < piesNeeded) ? ("You need more pies!") : ("You have enough pies");
+
+              alert(answer);
 
 
 
