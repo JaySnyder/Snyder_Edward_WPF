@@ -15,7 +15,8 @@ Test
 
    //var peach = 100;
 
-   var aTotal = prompt ("How many people chose apple pie? ");
+
+      var aTotal = prompt ("How many people chose apple pie? ");
 
         while(isNaN(aTotal) || (aTotal==="")) {
 
@@ -30,7 +31,7 @@ Test
 
         }
 
-   var bTotal = prompt ("How many people chose blueberry pie? ");
+       var bTotal = prompt ("How many people chose blueberry pie? ");
 
       while(isNaN(bTotal) || (bTotal==="")) {
 
@@ -46,11 +47,11 @@ Test
 
         }
 
-        var part1 = Number(aTotal) + Number(cTotal);
+       var part1 = Number(aTotal) + Number(cTotal);
 
-        var part2 = Number(bTotal) + Number(pTotal);
+       var part2 = Number(bTotal) + Number(pTotal);
 
-        var total = Number(part1) + Number(part2);
+       var total = Number(part1) + Number(part2);
 
         alert("There are " + total + " participants.");
 
@@ -61,21 +62,18 @@ Test
 
         //var totalPies = apple + cherry + blueberry + peach;
 
-       function pies(){
+       function avail(){
 
                   var apple = 50;
                   var cherry = 32;
                   var blueberry = 12;
                   var peach = 12;
 
-                var pies = Number(apple) + Number(cherry) + Number(blueberry) + Number(peach);
+                var avail = apple + cherry + blueberry + peach;
 
-               alert("You have " + pies + " on hand.");
-
+               console.log(avail);
           }
-
-        alert("You have " + pies + " on hand.");
-
+                 avail();
 
 
 
