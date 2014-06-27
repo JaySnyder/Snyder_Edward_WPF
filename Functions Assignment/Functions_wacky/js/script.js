@@ -52,13 +52,17 @@ Test
 
         var total = Number(part1) + Number(part2);
 
-        var piesNeeded = Number(total) * 3.5;
+        alert("There are " + total + " participants.");
 
-        alert("There are" + total + " participants.");
+        var piesNeeded = total * 3.5;
 
-   var totalPies = apple + cherry + blueberry + peach;
+        alert ("You need a total of " + piesNeeded + " pies.")
 
-   var result = (totalPies < piesNeeded) ? ("You need more pies!") : ("You have enough pies");
+
+        //var totalPies = apple + cherry + blueberry + peach;
+
+
+   //var result = (totalPies < piesNeeded) ? ("You need more pies!") : ("You have enough pies");
 
 
 
